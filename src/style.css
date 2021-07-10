@@ -1,0 +1,35 @@
+body {
+  font-family: Google Sans, arial, sans-serif;
+}
+
+.elahe-weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #202124;
+  display: block;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 326px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+}
