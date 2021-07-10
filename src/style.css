@@ -2,14 +2,6 @@ body {
   font-family: Google Sans, arial, sans-serif;
 }
 
-.elahe-weather-app {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 30px;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
-}
-
 h1 {
   color: #202124;
   display: block;
@@ -32,4 +24,51 @@ li {
   font-weight: 400;
   line-height: 20px;
   text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.elahe-weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+.weather-temperature img {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.weather-temperature strong {
+  color: #212529;
+  display: inline;
+  font-family: Google Sans, arial, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.weather-temperature .units {
+  color: #70757a;
+  font-size: 16px;
+  position: relative;
+  top: -21px;
+}
+
+.coder-name {
+  margin-top: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: content-box;
 }
