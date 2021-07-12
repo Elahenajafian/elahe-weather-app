@@ -11,16 +11,18 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="app-wrapper">
         <div class="elahe-weather-app">
-          <h1>Mashhad</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Saturday 13:00</li>
-            <li>Mostly Sunny</li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
@@ -29,15 +31,15 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="mostly sunny"
                 />
-                <strong>33</strong
+                <strong id="temp"></strong
                 ><span class="units">°C | <a href="#"> °F</a> </span>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Precipitation: 0%</li>
-                <li>Humidity: 31%</li>
-                <li>Wind: 11 km/h</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
