@@ -38,6 +38,7 @@ function displayTemp(response) {
 }
 
 let apiKey = "8d2107fd2cdb7e4922d9ae2a41298ba2";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mashhad&appid=${apiKey}&units=metric`;
+let city = "Quchan";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemp);
