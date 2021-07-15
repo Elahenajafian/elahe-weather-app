@@ -89,3 +89,34 @@ a {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+
+.weather-forcast {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  text-align: center;
+}
+
+.weather-forecast-temps {
+  font-size: 13px;
+  text-align: center;
+  display: inline-block;
+
+}
+
+.minimum {
+  opacity: 0.5;
+}
+
+.forecast-collection-daily {
+  background-color: white;
+  display:block;
+  text-align: center;
+  width: 75px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
