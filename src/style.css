@@ -1,10 +1,11 @@
 body {
   font-family: Google Sans, arial, sans-serif;
-background: radial-gradient(circle at 10% 20%, rgb(254, 255, 165) 0%, rgb(255, 232, 182) 90%);}
+  background-color: #5b446a;
+}
 
 .elahe-weather-app {
-background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
-} 
+  background: #4c9173;
+}
 
 h1 {
   color: #202124;
@@ -38,6 +39,11 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  background-color: #906387;
+  color: #ebebeb;
+}
+
 .app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -54,8 +60,8 @@ a {
 
 .weather-temperature img {
   margin-right: 15px;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
 }
 
 .weather-temperature strong {
@@ -90,7 +96,6 @@ a {
   text-decoration: none;
 }
 
-
 .weather-forcast {
   margin-top: 25px;
   text-align: center;
@@ -98,25 +103,12 @@ a {
 
 .weather-forecast-date {
   font-size: 16px;
-  text-align: center;
 }
 
 .weather-forecast-temps {
   font-size: 13px;
-  text-align: center;
-  display: inline-block;
-
 }
 
 .minimum {
   opacity: 0.5;
-}
-
-.forecast-collection-daily {
-  background-color: white;
-  display:block;
-  text-align: center;
-  width: 75px;
-  border-radius: 10px;
-  margin-right: 5px;
 }
