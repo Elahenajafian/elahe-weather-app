@@ -21,7 +21,7 @@
         <div class="elahe-weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-sm-9">
                 <input
                   type="search"
                   id="city-input"
@@ -29,35 +29,39 @@
                   class="form-control"
                 />
               </div>
-              <div class="col-3">
+              <div class="col-sm-3">
                 <input type="submit" value="Search" class="btn w-100" />
               </div>
             </div>
           </form>
           <div class="overview">
             <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="mostly sunny" id="icon" />
-                <strong id="temp"></strong
-                ><span class="units">
-                  <a href="#" id="celsius-link" class="active"> °C </a>|
-                  <a href="#" id="fahrenheit-link"> °F</a>
-                </span>
-              </div>
-            </div>
-            <div class="col-6">
+            <div id="information">
               <ul>
-                <li>Precipitation: <span id="precipitation"></span> %</li>
-                <li>Humidity: <span id="humidity"></span> %</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="description"></li>
               </ul>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="clearfix weather-temperature">
+                  <img src="" alt="mostly sunny" id="icon" />
+                  <strong id="temp"></strong
+                  ><span class="units">
+                    <a href="#" id="celsius-link" class="active" tabindex="1">
+                      °C </a
+                    >|
+                    <a href="#" id="fahrenheit-link" tabindex="1"> °F</a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <ul>
+                  <li>Precipitation: <span id="precipitation"></span> %</li>
+                  <li>Humidity: <span id="humidity"></span> %</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="weather-forcast" id="forecast"></div>

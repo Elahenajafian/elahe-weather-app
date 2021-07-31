@@ -1,14 +1,21 @@
+:root {
+  --primary-color: #fffdfb;
+  --secondary-color: #fde9df;
+  --contrast-color: #0881a3;
+  --complementory-color: #ffd6a4;
+}
+
 body {
   font-family: Google Sans, arial, sans-serif;
-  background-color: #5b446a;
+  background-color: var(--secondary-color);
 }
 
 .elahe-weather-app {
-  background: #4c9173;
+  background: var(--contrast-color);
 }
 
 h1 {
-  color: #202124;
+  color: var(--secondary-color);
   display: block;
   font-size: 40px;
   font-weight: 400;
@@ -29,6 +36,7 @@ li {
   font-weight: 400;
   line-height: 20px;
   text-align: right;
+  color: var(--secondary-color);
 }
 
 li:first-letter {
@@ -40,8 +48,13 @@ a {
 }
 
 .btn {
-  background-color: #906387;
-  color: #ebebeb;
+  background-color: var(--secondary-color);
+  color: var(--contrast-color);
+}
+
+.btn:hover {
+  background-color: var(--complementory-color);
+  color: var(--contrast-color);
 }
 
 .app-wrapper {
@@ -56,6 +69,7 @@ a {
   padding: 30px;
   border: 1px solid #ebebeb;
   border-radius: 5px;
+  margin-top: 70px;
 }
 
 .weather-temperature img {
@@ -85,6 +99,12 @@ a {
   padding: 0;
   line-height: 0;
   box-sizing: content-box;
+  color: black;
+  margin-top: -15px;
+}
+
+.coder-name a {
+  color: var(--contrast-color);
 }
 
 .weather-temperature .active {
@@ -111,4 +131,29 @@ a {
 
 .minimum {
   opacity: 0.5;
+}
+
+.units a {
+  color: black;
+}
+
+.units a:active {
+  color: var(--secondary-color);
+}
+
+a[tabindex]:focus {
+  color: var(--secondary-color);
+  outline: none;
+}
+
+#city {
+  padding-top: 30px;
+}
+
+#information {
+  margin-top: -30px;
+}
+
+#temp {
+  color: var(--secondary-color);
 }
